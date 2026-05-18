@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "name": "Fit Kaka",
+    "slug": "fit-kaka",
+    "shortDescription": "AI nutrition assistant for tracking calories, macros, and meal insights via WhatsApp.",
+    "description": [
+      "An AI-powered nutrition assistant that enables users to track calories and macros instantly by sending food photos or text messages via WhatsApp.",
+      "Built using Next.js and Node.js, leveraging the Gemini API for advanced image recognition and automated nutritional analysis of meals.",
+      "Tech stack includes MongoDB for meal history, Tailwind CSS with Framer Motion for a high-contrast dashboard, and WhatsApp Cloud API for a seamless, no-app-required user experience."
+    ],
+    "image": "fitkaka.webp",
+    "link": "https://fit-kaka.vercel.app",
+    "github": "https://github.com/SiddhantKanawade30/fit-kaka",
+    "layout": "image-left"
+  },
+  {
+    "id": 2,
+    "name": "TestimonialsLo",
+    "slug": "testimonialslo",
+    "shortDescription": "Customer testimonial manager with video uploads, payment flows, and secure storage.",
+    "description": [
+      "A platform that helps businesses, freelancers, startups gather and manage customer video, text testimonials efficiently.",
+      "Built with Next.js frontend and Node.js backend, uses Mux for seamless video uploads and processing.",
+      "Tech stack includes Prisma with PostgreSQL for database management, Zod for input sanitization, and Razorpay for payment processing."
+    ],
+    "image": "testimonialslo.png",
+    "link": "https://testimonialslo.siddhantkanawade.in",
+    "github": "https://github.com/SiddhantKanawade30/testimonialslo-backend",
+    "layout": "image-right"
+  },
+  {
+    "id": 3,
+    "name": "Canvas Board",
+    "slug": "canvas-board",
+    "shortDescription": "Real-time collaborative whiteboard for team brainstorming and design with instant sync.",
+    "description": [
+      "A real-time collaborative whiteboarding platform that allows multiple users to brainstorm, architect flows, and design wireframes on a shared infinite canvas.",
+      "Built with a Next.js frontend and Node.js backend, utilizing WebSockets to handle instant synchronization of shapes, drawings, and ideas across all connected clients.",
+      "Tech stack features PostgreSQL with Prisma ORM for persistent storage of board states, supporting a suite of tools including freehand pencil drawing and geometric shape primitives, with the entire codebase structured as a turborepo."
+    ],
+    "image": "canvas.webp",
+    "link": null,
+    "github": "https://github.com/SiddhantKanawade30/canvas-board",
+    "layout": "image-left"
+  },
+  {
+    "id": 4,
+    "name": "Syncoo",
+    "slug": "syncoo",
+    "shortDescription": "Team management platform to streamline team tasks and issues tracking",
+    "description": [
+      "A modern project management and issue-tracking platform designed to streamline task organization and real-time status monitoring.",
+      "Developed with Next.js 16 and TypeScript, featuring a responsive dashboard built with Shadcn/ui and TanStack Table for efficient data handling.",
+      "Tech stack integrates Grok AI for intelligent issue analysis, Tailwind CSS for the interface, and automated Email Notifications to keep teams updated on project milestones."
+    ],
+    "image": "syncoo.webp",
+    "link": "https://syncoo.vercel.app/",
+    "github": "https://github.com/SiddhantKanawade30/synco",
+    "layout": "image-right"
+  },
+  {
+    "id": 5,
+    "name": "Secure Vault",
+    "slug": "secure-vault",
+    "shortDescription": "Encrypted password manager built with MERN stack for secure credential storage.",
+    "description": [
+      "A secure password manager using cryptography, helping users store and manage their passwords securely.",
+      "Built using Mern stack, for encryption of passwords, secure vault uses cryptojs library.",
+      "This is my first MERN stack project, got indepth of how does encryption works."
+    ],
+    "image": "securevault.jpg",
+    "link": "https://secure-vault-delta.vercel.app/",
+    "github": "https://github.com/SiddhantKanawade30/SecureVault",
+    "layout": "image-left"
+  },
+  {
+    "id": 6,
+    "name": "Blogito",
+    "slug": "blogito",
+    "shortDescription": "A blog platform for sharing stories, built with React, Tailwind CSS, and email verification.",
+    "description": [
+      "Blogito is a blog website built to share experiences and learnings with the world.",
+      "Built with React, Tailwind CSS and javascript. For email verification Blogito uses node mailer.",
+      "Users can seamlessly create their blog posts of any domain and share it globally."
+    ],
+    "image": "Blogito.png",
+    "link": "https://blogito.vercel.app/",
+    "github": "https://github.com/SiddhantKanawade30/blogito-backend",
+    "layout": "image-right"
+  }
+]

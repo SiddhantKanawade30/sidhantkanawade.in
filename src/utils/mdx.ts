@@ -40,8 +40,9 @@ export const getBlogContent = async (slug: string) => {
 
 export const getBlogs = async () => {
     const files = await fs.readdir(path.join(process.cwd(), "src/data"))
+    const mdxFiles = files.filter((file) => file.endsWith(".mdx"))
 
-    const allBlogs = await Promise.all(files.map(async (file) => {
+    const allBlogs = await Promise.all(mdxFiles.map(async (file) => {
         const slug = file.replace(".mdx", "")
         const frontmatter = await getBlogFrontmatter(slug)
         return {
