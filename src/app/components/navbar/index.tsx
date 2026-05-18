@@ -3,14 +3,12 @@ import { Link } from 'next-view-transitions'
 import { Container } from "../Container"
 import { motion, useMotionValueEvent, useScroll, useTransform } from "framer-motion"
 import { useState } from "react"
-import { Sun, Moon } from "lucide-react"
 import { playClickSound } from "@/utils/sound"
 
 export const Navbar = () => {
     const [hovered, setHovered] = useState<number | null>(null)
     const [isMenuOpen, setIsMenuOpen] = useState(false)
     const [scrolled, setScrolled] = useState<boolean>(false)
-    const [isDarkMode, setIsDarkMode] = useState(false)
 
     const { scrollY } = useScroll()
     const y = useTransform(scrollY, [0, 100], [0, 10])
@@ -49,12 +47,6 @@ export const Navbar = () => {
 
     const closeMenu = () => {
         setIsMenuOpen(false)
-    }
-
-    const toggleTheme = () => {
-        setIsDarkMode(!isDarkMode)
-        // Here you can implement the actual theme switching logic
-        // For example: document.documentElement.classList.toggle('dark')
     }
 
     return (
