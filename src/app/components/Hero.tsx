@@ -38,7 +38,7 @@ export const Hero = () => {
             href="https://github.com/SiddhantKanawade30" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="text-secondary hover:text-primary transition-colors p-2 rounded-lg shadow-[inset_0px_3px_8px_0px_#00000024] hover:bg-neutral-100"
+            className="text-secondary hover:text-primary transition-colors p-2 rounded-lg shadow-siddhant hover:bg-neutral-100"
             aria-label="GitHub Profile"
           >
             <Github size={20} />
@@ -47,7 +47,7 @@ export const Hero = () => {
             href="/Siddhant_Kanawade_Resume.pdf" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="text-secondary hover:text-primary transition-colors p-2 rounded-lg shadow-[inset_0px_3px_8px_0px_#00000024] hover:bg-neutral-100"
+            className="text-secondary hover:text-primary transition-colors p-2 rounded-lg shadow-siddhant hover:bg-neutral-100"
             aria-label="Resume"
           >
             <FileText size={20} />
@@ -56,7 +56,7 @@ export const Hero = () => {
             href="https://x.com/SiddKanawade30" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="text-secondary hover:text-primary transition-colors p-2 rounded-lg shadow-[inset_0px_3px_8px_0px_#00000024] hover:bg-neutral-100"
+            className="text-secondary hover:text-primary transition-colors p-2 rounded-lg shadow-siddhant hover:bg-neutral-100"
             aria-label="X/Twitter Profile"
           >
             <Twitter size={20} />
@@ -65,7 +65,7 @@ export const Hero = () => {
             href="https://linkedin.com/in/siddhant-kanawade" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="text-secondary hover:text-primary transition-colors p-2 rounded-lg shadow-[inset_0px_3px_8px_0px_#00000024] hover:bg-neutral-100"
+            className="text-secondary hover:text-primary transition-colors p-2 rounded-lg shadow-siddhant hover:bg-neutral-100"
             aria-label="LinkedIn Profile"
           >
             <Linkedin size={20} />

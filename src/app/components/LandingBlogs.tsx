@@ -43,7 +43,7 @@ export const LandingBlogs = async () => {
                   key={blog.slug} 
                   className="block group"
                 >
-                  <article className="bg-white rounded-lg p-4 md:p-6 border border-gray-200 shadow-[inset_0px_3px_8px_0px_#00000014] transition-all duration-200">
+                  <article className="bg-white rounded-lg p-4 md:p-6  transition-all duration-200">
                     <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-3 md:gap-4">
                       {/* Left Side - Title and Description */}
                       <div className="flex-1 min-w-0">

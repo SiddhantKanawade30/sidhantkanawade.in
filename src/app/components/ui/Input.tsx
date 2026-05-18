@@ -54,7 +54,7 @@ export const Input = ({label, placeholder, type, value, onChange}: {label: strin
                     placeholder={placeholder} 
                     value={value !== undefined ? value : inputValue} 
                     onChange={handleInputChange as unknown as React.ChangeEventHandler<HTMLInputElement>} 
-                    className="border border-neutral-300 rounded-md p-2 pr-12 w-full text-sm md:text-base shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] focus:ring-1 focus:ring-secondary focus:outline-none" 
+                    className="border border-neutral-300 rounded-md p-2 pr-12 w-full text-sm md:text-base shadow-siddhant focus:ring-1 focus:ring-secondary focus:outline-none" 
                 />
                 <button 
                     type="submit"
