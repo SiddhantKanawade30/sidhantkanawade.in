@@ -20,7 +20,7 @@ export const Projects = () => {
             title: "Fit Kaka",
             slug: "fit-kaka",
             src: FitKaka,
-            description: "AI nutrition assistant for tracking calories, macros, and meal insights via WhatsApp.",
+            description: "AI nutrition assistant for tracking calories, proteins, and meal insights via WhatsApp by image and text upload.",
             href: "https://fit-kaka.vercel.app",
             github: "https://github.com/SiddhantKanawade30/fit-kaka"
         },
