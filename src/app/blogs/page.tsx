@@ -4,6 +4,7 @@ import { getBlogs } from "@/utils/mdx";
 import { Link } from 'next-view-transitions'
 import { Title } from "../components/ui/Title";
 import { Subtitle } from "../components/ui/Subtitle";
+import Image from "next/image";
 
 
 export const metadata: Metadata = {
@@ -59,7 +60,7 @@ export default async function BlogsPage() {
                   {/* Blog Image */}
                   {blog.image && (
                     <div className="mb-4">
-                      <img 
+                      <Image
                         src={blog.image} 
                         alt={blog.title}
                         className="w-full h-48 object-cover rounded-lg"
