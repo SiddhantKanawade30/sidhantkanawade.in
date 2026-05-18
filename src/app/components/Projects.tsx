@@ -7,32 +7,62 @@ import { Badge } from "./ui/Badge"
 import Blogito from "@public/Blogito.png"
 import TestimonialsLo from "@public/testimonialslo.png"
 import SecureVault from "@public/securevault.jpg"
-import GithubIcon from "@public/github-icon.svg"
+import FitKaka from "@public/fitkaka.webp"
+import Syncoo from "@public/syncoo.webp"
+import CanvasBoard from "@public/canvas.webp"
+// import GithubIcon from "@public/github-icon.svg"
 
 
 export const Projects = () => {
 
     const projects = [
         {
-            title: "Blogito",
-            src: Blogito,
-            description: "A blog website to share experiences and learnings. Built with React, Tailwind CSS and javascript.",
-            href: "https://blogito.vercel.app/",
-            github: "https://github.com/SiddhantKanawade30/blogito-backend"
+            title: "Fit Kaka",
+            slug: "fit-kaka",
+            src: FitKaka,
+            description: "AI nutrition assistant for tracking calories, macros, and meal insights via WhatsApp.",
+            href: "https://fit-kaka.vercel.app",
+            github: "https://github.com/SiddhantKanawade30/fit-kaka"
+        },
+        {
+            title: "TestimonialsLo",
+            slug: "testimonialslo",
+            src: TestimonialsLo,
+            description: "A platform that helps businesses, freelancers, startups gather and manage customer video, text testimonials.",
+            href: "https://testimonialslo.siddhantkanawade.in",
+            github: "https://github.com/SiddhantKanawade30/testimonialslo-backend"
+        },
+        {
+            title: "Canvas Board",
+            slug: "canvas-board",
+            src: CanvasBoard,
+            description: "Real-time collaborative whiteboard for sketching, brainstorming, and shared design sessions.",
+            href: null,
+            github: "https://github.com/SiddhantKanawade30/canvas-board"
+        },
+        {
+            title: "Syncoo",
+            slug: "syncoo",
+            src: Syncoo,
+            description: "A modern project management platform for issue tracking, dashboards, and team workflows.",
+            href: "https://syncoo.vercel.app/",
+            github: "https://github.com/SiddhantKanawade30/synco"
         },
         {
             title: "Secure Vault",
+            slug: "secure-vault",
             src: SecureVault,
             description: "A secure password manager using cryptography, helping users store and manage their passwords securely.",
             href: "https://secure-vault-delta.vercel.app/",
             github: "https://github.com/SiddhantKanawade30/SecureVault"
         },
         {
-            title: "TestimonialsLo",
-            src: TestimonialsLo,
-            description: "A platform that helps businesses, freelancers, startups gather and manage customer video, text testimonials efficiently.",
-            href: "https://testimonialslo.siddhantkanawade.in",
-            github: "https://github.com/SiddhantKanawade30/testimonialslo-backend"
+            title: "Blogito",
+            slug: "blogito",
+            src: Blogito,
+            description: "A blog website to share experiences and learnings. Built with React, Tailwind CSS and javascript.",
+            href: "https://blogito.vercel.app/",
+            github: "https://github.com/SiddhantKanawade30/blogito-backend"
         }
     ]
 
@@ -51,42 +81,30 @@ export const Projects = () => {
                             whileInView={{ opacity: 1, filter: "blur(0px)" , y:0 }}
                             transition={{ duration: 0.3, delay: idx * 0.1 , ease : "easeInOut" }}
                             key={project.title}>
-                                <motion.div className=" w-80 min-h-75 md:w-67 shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] rounded-2xl md:transition-shadow md:duration-[500ms] min-w-0"
+                                <motion.div className=" w-80 min-h-55 md:w-67 shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] rounded-2xl md:transition-shadow md:duration-[500ms] min-w-0"
                                 transition={{ duration: 0.3, ease : "easeInOut" }}
                                 >
-                                    <div className="md:h-38 border-1 border-neutral-200 rounded-xl overflow-hidden">
-                                        {project.href ? (
-                                            <Link href={project.href} target="_blank" rel="noopener noreferrer">
-                                                <Image
-                                                    src={project.src}
-                                                    alt={project.title}
-                                                    className="rounded-xl object-cover hover:scale-[1.01] transition duration-200 w-full h-full cursor-pointer"
-                                                    width={400}
-                                                    height={400}
-                                                    priority
-                                                />
-                                            </Link>
-                                        ) : (
+                                    <div className="relative h-24 md:h-34 border border-neutral-200 rounded-xl overflow-hidden">
+                                        <Link href={`/projects/${project.slug}`} className="block h-full w-full">
                                             <Image
                                                 src={project.src}
                                                 alt={project.title}
-                                                className="rounded-xl object-cover w-full h-full opacity-75"
-                                                width={400}
-                                                height={400}
+                                                fill
+                                                className="rounded-xl object-cover transition duration-200 hover:scale-[1.01]"
                                                 priority
                                             />
-                                        )}
+                                        </Link>
                                     </div>
 
                                     <div className="flex items-center justify-between pr-2">
                                         <h2 className="text-tertiary text-lg font-bold mt-2 pl-2 tracking-tight">
                                             {project.title}
                                         </h2>
-                                        {project.github && (
+                                        {/* {project.github && (
                                             <Link href={project.github} target="_blank" rel="noopener noreferrer" className="text-secondary hover:text-primary transition-colors">
                                                 <Image src={GithubIcon} alt="GitHub" width={20} height={20} className="w-5 h-5" />
                                             </Link>
-                                        )}
+                                        )} */}
                                     </div>
                                     <p className="text-secondary text-sm pt-2 pb-5 pl-2 tracking-tight leading-relaxed">
                                         {project.description}
