@@ -33,7 +33,7 @@ export const Projects = () => {
             github: "https://github.com/SiddhantKanawade30/testimonialslo-backend"
         },
         {
-            title: "Canvas Board",
+            title: "Canvas Board (developing)",
             slug: "canvas-board",
             src: CanvasBoard,
             description: "Real-time collaborative whiteboard for sketching, brainstorming, and shared design sessions.",
@@ -41,7 +41,7 @@ export const Projects = () => {
             github: "https://github.com/SiddhantKanawade30/canvas-board"
         },
         {
-            title: "Syncoo",
+            title: "Syncoo (developing)",
             slug: "syncoo",
             src: Syncoo,
             description: "A modern project management platform for issue tracking, dashboards, and team workflows.",
@@ -81,10 +81,10 @@ export const Projects = () => {
                             whileInView={{ opacity: 1, filter: "blur(0px)" , y:0 }}
                             transition={{ duration: 0.3, delay: idx * 0.1 , ease : "easeInOut" }}
                             key={project.title}>
-                                <motion.div className=" w-80 min-h-55 md:w-67 shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] rounded-2xl md:transition-shadow md:duration-[500ms] min-w-0"
+                                <motion.div className="w-80 min-h-55 md:w-67 shadow-siddhant rounded-2xl md:transition-shadow md:duration-[500ms] min-w-0"
                                 transition={{ duration: 0.3, ease : "easeInOut" }}
                                 >
-                                    <div className="relative h-24 md:h-34 border border-neutral-200 rounded-xl overflow-hidden">
+                                    <div className="relative h-44 md:h-34 border border-neutral-200 rounded-xl overflow-hidden">
                                         <Link href={`/projects/${project.slug}`} className="block h-full w-full">
                                             <Image
                                                 src={project.src}
@@ -97,7 +97,7 @@ export const Projects = () => {
                                     </div>
 
                                     <div className="flex items-center justify-between pr-2">
-                                        <h2 className="text-tertiary text-lg font-bold mt-2 pl-2 tracking-tight">
+                                        <h2 className="text-primary text-lg font-bold mt-2 pl-2 tracking-tight">
                                             {project.title}
                                         </h2>
                                         {/* {project.github && (

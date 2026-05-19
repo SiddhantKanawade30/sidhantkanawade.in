@@ -47,7 +47,7 @@ export const LandingBlogs = async () => {
                     <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-3 md:gap-4">
                       {/* Left Side - Title and Description */}
                       <div className="flex-1 min-w-0">
-                        <h2 className="text-lg md:text-xl font-bold text-primary mb-2 md:mb-3 group-hover:text-tertiary transition-colors leading-tight">
+                        <h2 className="text-lg md:text-xl font-semibold text-primary mb-2 md:mb-3 group-hover:text-tertiary transition-colors leading-tight">
                           {blog.title}
                         </h2>
                         
