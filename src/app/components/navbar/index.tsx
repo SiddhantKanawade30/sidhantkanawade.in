@@ -3,12 +3,13 @@ import { Link } from 'next-view-transitions'
 import { Container } from "../Container"
 import { motion, useMotionValueEvent, useScroll, useTransform } from "framer-motion"
 import { useState } from "react"
+import { usePathname } from "next/navigation"
 import { playClickSound } from "@/utils/sound"
 
 export const Navbar = () => {
     const [hovered, setHovered] = useState<number | null>(null)
-    const [isMenuOpen, setIsMenuOpen] = useState(false)
     const [scrolled, setScrolled] = useState<boolean>(false)
+    const pathname = usePathname()
 
     const { scrollY } = useScroll()
     const y = useTransform(scrollY, [0, 100], [0, 10])
@@ -40,14 +41,6 @@ export const Navbar = () => {
             href: "/blogs"
         }
     ]
-
-    const toggleMenu = () => {
-        setIsMenuOpen(!isMenuOpen)
-    }
-
-    const closeMenu = () => {
-        setIsMenuOpen(false)
-    }
 
     return (
         <Container>
@@ -111,96 +104,42 @@ export const Navbar = () => {
                     duration: 0.3,
                     ease: "easeInOut",
                 }}
-                className="md:hidden rounded-lg flex items-center justify-between px-4 py-2 fixed inset-x-0 mx-auto top-0 max-w-full z-50 bg-white"
+                className="md:hidden fixed inset-x-4 mx-auto bottom-4 max-w-md z-50 rounded-full border border-neutral-200/50 bg-white/80 backdrop-blur-md shadow-lg"
             >
-                <div className="flex items-center space-x-2">
-                    <Link href="/" onClick={() => { closeMenu(); playClickSound(); }}>
-                        <div className="hover:bg-neutral-100 px-3 py-2 rounded-md transition-colors duration-200 font-medium">
-                            Home
-                        </div>
-                    </Link>
-                    
-                    {/* Theme Toggle */}
-                    {/* <button
-                        onClick={toggleTheme}
-                        className="p-2 rounded-md hover:bg-neutral-100 transition-colors duration-200"
-                        aria-label="Toggle theme"
-                    >
-                        {isDarkMode ? (
-                            <Sun size={18} className="text-secondary" />
-                        ) : (
-                            <Moon size={18} className="text-secondary" />
-                        )}
-                    </button> */}
+                <div className="flex items-center justify-between px-2 py-3">
+                    {navItems.map((item, idx) => {
+                        const isActive = pathname === item.href || (item.href !== "/" && pathname.startsWith(item.href))
+                        return (
+                            <Link
+                                href={item.href}
+                                key={idx}
+                                className="flex-1 flex justify-center"
+                                onClick={() => playClickSound()}
+                            >
+                                <motion.div
+                                    className="px-4 py-2 rounded-full text-sm font-medium"
+                                    animate={{
+                                        backgroundColor: isActive ? "#000000" : "transparent",
+                                        color: isActive ? "#ffffff" : "#374151",
+                                        scale: isActive ? 1 : 0.95,
+                                    }}
+                                    transition={{
+                                        duration: 0.3,
+                                        type: "spring",
+                                        stiffness: 300,
+                                        damping: 20,
+                                    }}
+                                    whileHover={{
+                                        backgroundColor: !isActive ? "#f3f4f6" : "#000000",
+                                    }}
+                                >
+                                    {item.label}
+                                </motion.div>
+                            </Link>
+                        )
+                    })}
                 </div>
-
-                {/* Hamburger Menu Button */}
-                <button
-                    onClick={toggleMenu}
-                    className="flex flex-col justify-center items-center w-8 h-8 space-y-1 focus:outline-none"
-                    aria-label="Toggle navigation menu"
-                >
-                    <motion.span
-                        animate={{
-                            rotate: isMenuOpen ? 45 : 0,
-                            y: isMenuOpen ? 6 : 0,
-                        }}
-                        className="block w-5 h-0.5 bg-gray-800 rounded transition-all duration-300"
-                    />
-                    <motion.span
-                        animate={{
-                            opacity: isMenuOpen ? 0 : 1,
-                        }}
-                        className="block w-5 h-0.5 bg-gray-800 rounded transition-all duration-300"
-                    />
-                    <motion.span
-                        animate={{
-                            rotate: isMenuOpen ? -45 : 0,
-                            y: isMenuOpen ? -6 : 0,
-                        }}
-                        className="block w-5 h-0.5 bg-gray-800 rounded transition-all duration-300"
-                    />
-                </button>
             </motion.nav>
-
-            {/* Mobile Menu Dropdown */}
-            <motion.div
-                initial={{ opacity: 0, y: -20 }}
-                animate={{
-                    opacity: isMenuOpen ? 1 : 0,
-                    y: isMenuOpen ? 0 : -20,
-                    pointerEvents: isMenuOpen ? "auto" : "none",
-                }}
-                transition={{ duration: 0.3, ease: "easeInOut" }}
-                className=" md:hidden fixed top-16 inset-x-0 mx-4 bg-white rounded-lg shadow-lg z-40 overflow-hidden"
-                style={{
-                    boxShadow: "var(--shadow-siddhant, 0 10px 40px rgba(0, 0, 0, 0.1))",
-                }}
-            >
-                <div className="py-2">
-                    {navItems.map((item, idx) => (
-                        <Link
-                            href={item.href}
-                            key={idx}
-                            className="block px-4 py-3 text-sm hover:bg-neutral-100 transition-colors duration-200 border-b border-neutral-100 last:border-b-0"
-                            onClick={() => { closeMenu(); playClickSound(); }}
-                        >
-                            {item.label}
-                        </Link>
-                    ))}
-                </div>
-            </motion.div>
-
-            {/* Mobile Menu Overlay */}
-            {isMenuOpen && (
-                <motion.div
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    exit={{ opacity: 0 }}
-                    className="md:hidden fixed inset-0 backdrop-blur-sm bg-white/10 z-30"
-                    onClick={closeMenu}
-                />
-            )}
         </Container>
     )
 }

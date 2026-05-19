@@ -63,6 +63,8 @@ export default async function BlogsPage() {
                       <Image
                         src={blog.image} 
                         alt={blog.title}
+                        width={800}
+                        height={400}
                         className="w-full h-48 object-cover rounded-lg"
                       />
                     </div>

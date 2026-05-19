@@ -95,6 +95,8 @@ export default async function SingleBlogPage({ params }: { params: Promise<{ slu
               <Image
                 src={blog.frontmatter.image} 
                 alt={blog.frontmatter.title}
+                width={1000}
+                height={500}
                 className="w-full h-64 md:h-103 object-cover rounded-lg"
               />
             </div>
