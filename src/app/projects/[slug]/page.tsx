@@ -35,27 +35,26 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
               href={project.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="block relative h-72 md:h-[32rem] w-full overflow-hidden"
+              className="block relative h-72 md:w-[52rem] md:h-[25rem] w-full overflow-hidden mx-auto"
             >
               <Image
                 src={projectImages[project.image]}
                 alt={project.name}
-                fill
-                className="object-cover transition duration-300 ease-in-out hover:scale-[1.01]"
+                className="object-cover transition duration-300 ease-in-out hover:brightness-95 rounded-2xl shadow-siddhant"
               />
             </Link>
           ) : (
-            <div className="relative h-72 md:h-[32rem] w-full overflow-hidden">
+            <div className="relative h-72 md:w-[52rem] md:h-[23rem] w-full overflow-hidden mx-auto">
               <Image
                 src={projectImages[project.image]}
                 alt={project.name}
                 fill
-                className="object-cover"
+                className="object-cover rounded-2xl shadow-siddhant"
               />
             </div>
           )}
 
-          <div className="p-6 md:p-10">
+          <div className="p-6 md:p-6">
             <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
               <div>
                 <h1 className="text-3xl font-semibold tracking-tight text-slate-950">

@@ -19,18 +19,18 @@ interface ProjectCardProps {
 
 export const ProjectCard = ({ project }: ProjectCardProps) => {
   return (
-    <div className=" bg-white/80 shadow-sm border border-neutral-200 rounded-xl overflow-hidden">
+    <div className=" bg-white/80 shadow-sm border border-neutral-200 rounded-2xl overflow-hidden">
       <NextLink href={`/projects/${project.slug}`} className="group block">
-        <div className="relative h-56 md:h-54 border-b border-neutral-200 w-full overflow-hidden">
+        <div className="relative h-56 md:h-54 border-b border-neutral-200 w-full overflow-hidden rounded-2xl">
           <Image
             src={projectImages[project.image]}
             alt={project.name}
             fill
-            className="object-cover transition duration-300 ease-in-out group-hover:scale-[1.02]"
+            className="object-cover rounded-2xl transition duration-300 ease-in-out shadow-siddhant group-hover:brightness-95"
           />
         </div>
 
-        <div className="p-6">
+        <div className="p-3">
           <h2 className="text-xl font-semibold text-slate-950 mb-3 transition-colors group-hover:text-primary">
             {project.name}
           </h2>
