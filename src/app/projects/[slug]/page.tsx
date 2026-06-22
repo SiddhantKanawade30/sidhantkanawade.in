@@ -35,7 +35,7 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
               href={project.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="block relative h-72 md:w-[52rem] md:h-[25rem] w-full overflow-hidden mx-auto"
+              className="block relative h-42 md:w-[52rem] md:h-[25rem] w-full overflow-hidden mx-auto"
             >
               <Image
                 src={projectImages[project.image]}
