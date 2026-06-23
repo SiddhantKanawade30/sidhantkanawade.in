@@ -24,7 +24,7 @@
       "Built with Next.js frontend and Node.js backend, uses Mux for seamless video uploads and processing.",
       "Tech stack includes Prisma with PostgreSQL for database management, Zod for input sanitization, and Razorpay for payment processing."
     ],
-    "image": "testimonialslo.png",
+    "image": "testimonialslo.webp",
     "link": "https://testimonialslo.siddhantkanawade.in",
     "github": "https://github.com/SiddhantKanawade30/testimonialslo-backend",
     "layout": "image-right"
