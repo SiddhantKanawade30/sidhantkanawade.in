@@ -4,7 +4,7 @@ import Image from "next/image"
 import Link from "next/link"
 import { Container } from "./Container"
 import { Badge } from "./ui/Badge"
-import Blogito from "@public/Blogito.png"
+import OnTrack from "@public/onTrack.webp"
 import TestimonialsLo from "@public/testimonialslo.png"
 import SecureVault from "@public/securevault.jpg"
 import FitKaka from "@public/fitkaka.webp"
@@ -57,12 +57,12 @@ export const Projects = () => {
             github: "https://github.com/SiddhantKanawade30/SecureVault"
         },
         {
-            title: "Blogito",
-            slug: "blogito",
-            src: Blogito,
-            description: "A blog website to share experiences and learnings. Built with React, Tailwind CSS and javascript.",
-            href: "https://blogito.vercel.app/",
-            github: "https://github.com/SiddhantKanawade30/blogito-backend"
+            title: "OnTrack",
+            slug: "ontrack",
+            src: OnTrack,
+            description: "A lightweight, open-source browser extension designed to strip away YouTube's most addictive features to reclaim focus.",
+            href: "https://ontrack-v1.vercel.app/",
+            github: "https://github.com/SiddhantKanawade30/onTrack"
         }
     ]
 

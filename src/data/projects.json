@@ -76,6 +76,21 @@
   },
   {
     "id": 6,
+    "name": "OnTrack",
+    "slug": "ontrack",
+    "shortDescription": "A lightweight, open-source browser extension designed to strip away YouTube's most addictive features.",
+    "description": [
+      "OnTrack is a lightweight, open-source browser extension built to strip away YouTube's most addictive features, helping users reclaim focus, save attention span, and watch only what they intentionally search for.",
+      "It offers features like hiding the home recommendation feed, blocking the shorts shelf and sidebar tab, hiding toxic comment threads, and concealing the watch-next recommendations column.",
+      "Additionally, the extension includes a daily screen timer that limits YouTube usage, blocking access for the rest of the day once the daily limit is reached."
+    ],
+    "image": "onTrack.webp",
+    "link": "https://ontrack-v1.vercel.app/",
+    "github": "https://github.com/SiddhantKanawade30/onTrack",
+    "layout": "image-right"
+  },
+  {
+    "id": 7,
     "name": "Blogito",
     "slug": "blogito",
     "shortDescription": "A blog platform for sharing stories, built with React, Tailwind CSS, and email verification.",
@@ -87,6 +102,6 @@
     "image": "Blogito.png",
     "link": "https://blogito.vercel.app/",
     "github": "https://github.com/SiddhantKanawade30/blogito-backend",
-    "layout": "image-right"
+    "layout": "image-left"
   }
 ]
