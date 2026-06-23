@@ -69,7 +69,7 @@
       "Built using Mern stack, for encryption of passwords, secure vault uses cryptojs library.",
       "This is my first MERN stack project, got indepth of how does encryption works."
     ],
-    "image": "securevault.jpg",
+    "image": "securevault.webp",
     "link": "https://secure-vault-delta.vercel.app/",
     "github": "https://github.com/SiddhantKanawade30/SecureVault",
     "layout": "image-left"

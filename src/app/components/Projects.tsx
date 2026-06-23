@@ -6,7 +6,7 @@ import { Container } from "./Container"
 import { Badge } from "./ui/Badge"
 import OnTrack from "@public/onTrack.webp"
 import TestimonialsLo from "@public/testimonialslo.webp"
-import SecureVault from "@public/securevault.jpg"
+import SecureVault from "@public/securevault.webp"
 import FitKaka from "@public/fitkaka.webp"
 import Syncoo from "@public/syncoo.webp"
 import CanvasBoard from "@public/canvas.webp"
@@ -60,7 +60,7 @@ export const Projects = () => {
             title: "OnTrack",
             slug: "ontrack",
             src: OnTrack,
-            description: "A lightweight, open-source browser extension designed to strip away YouTube's most addictive features to reclaim focus.",
+            description: "A lightweight, open-source browser extension designed to strip away YouTube's most addictive features.",
             href: "https://ontrack-v1.vercel.app/",
             github: "https://github.com/SiddhantKanawade30/onTrack"
         }
