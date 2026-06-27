@@ -31,18 +31,18 @@
   },
   {
     "id": 3,
-    "name": "Canvas Board",
-    "slug": "canvas-board",
-    "shortDescription": "Real-time collaborative whiteboard for team brainstorming and design with instant sync.",
+    "name": "OnTrack",
+    "slug": "ontrack",
+    "shortDescription": "A lightweight, open-source browser extension designed to strip away YouTube's most addictive features.",
     "description": [
-      "A real-time collaborative whiteboarding platform that allows multiple users to brainstorm, architect flows, and design wireframes on a shared infinite canvas.",
-      "Built with a Next.js frontend and Node.js backend, utilizing WebSockets to handle instant synchronization of shapes, drawings, and ideas across all connected clients.",
-      "Tech stack features PostgreSQL with Prisma ORM for persistent storage of board states, supporting a suite of tools including freehand pencil drawing and geometric shape primitives, with the entire codebase structured as a turborepo."
+      "OnTrack is a lightweight, open-source browser extension built to strip away YouTube's most addictive features, helping users reclaim focus, save attention span, and watch only what they intentionally search for.",
+      "It offers features like hiding the home recommendation feed, blocking the shorts shelf and sidebar tab, hiding toxic comment threads, and concealing the watch-next recommendations column.",
+      "Additionally, the extension includes a daily screen timer that limits YouTube usage, blocking access for the rest of the day once the daily limit is reached."
     ],
-    "image": "canvas.webp",
-    "link": null,
-    "github": "https://github.com/SiddhantKanawade30/canvas-board",
-    "layout": "image-left"
+    "image": "onTrack.webp",
+    "link": "https://ontrack-v1.vercel.app/",
+    "github": "https://github.com/SiddhantKanawade30/onTrack",
+    "layout": "image-right"
   },
   {
     "id": 4,
@@ -76,18 +76,18 @@
   },
   {
     "id": 6,
-    "name": "OnTrack",
-    "slug": "ontrack",
-    "shortDescription": "A lightweight, open-source browser extension designed to strip away YouTube's most addictive features.",
+    "name": "Canvas Board",
+    "slug": "canvas-board",
+    "shortDescription": "Real-time collaborative whiteboard for team brainstorming and design with instant sync.",
     "description": [
-      "OnTrack is a lightweight, open-source browser extension built to strip away YouTube's most addictive features, helping users reclaim focus, save attention span, and watch only what they intentionally search for.",
-      "It offers features like hiding the home recommendation feed, blocking the shorts shelf and sidebar tab, hiding toxic comment threads, and concealing the watch-next recommendations column.",
-      "Additionally, the extension includes a daily screen timer that limits YouTube usage, blocking access for the rest of the day once the daily limit is reached."
+      "A real-time collaborative whiteboarding platform that allows multiple users to brainstorm, architect flows, and design wireframes on a shared infinite canvas.",
+      "Built with a Next.js frontend and Node.js backend, utilizing WebSockets to handle instant synchronization of shapes, drawings, and ideas across all connected clients.",
+      "Tech stack features PostgreSQL with Prisma ORM for persistent storage of board states, supporting a suite of tools including freehand pencil drawing and geometric shape primitives, with the entire codebase structured as a turborepo."
     ],
-    "image": "onTrack.webp",
-    "link": "https://ontrack-v1.vercel.app/",
-    "github": "https://github.com/SiddhantKanawade30/onTrack",
-    "layout": "image-right"
+    "image": "canvas.webp",
+    "link": null,
+    "github": "https://github.com/SiddhantKanawade30/canvas-board",
+    "layout": "image-left"
   },
   {
     "id": 7,

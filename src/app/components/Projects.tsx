@@ -33,6 +33,14 @@ export const Projects = () => {
             github: "https://github.com/SiddhantKanawade30/testimonialslo-backend"
         },
         {
+            title: "OnTrack",
+            slug: "ontrack",
+            src: OnTrack,
+            description: "A lightweight, open-source browser extension designed to strip away YouTube's most addictive features.",
+            href: "https://ontrack-v1.vercel.app/",
+            github: "https://github.com/SiddhantKanawade30/onTrack"
+        },
+        {
             title: "Canvas Board (developing)",
             slug: "canvas-board",
             src: CanvasBoard,
@@ -55,15 +63,7 @@ export const Projects = () => {
             description: "A secure password manager using cryptography, helping users store and manage their passwords securely.",
             href: "https://secure-vault-delta.vercel.app/",
             github: "https://github.com/SiddhantKanawade30/SecureVault"
-        },
-        {
-            title: "OnTrack",
-            slug: "ontrack",
-            src: OnTrack,
-            description: "A lightweight, open-source browser extension designed to strip away YouTube's most addictive features.",
-            href: "https://ontrack-v1.vercel.app/",
-            github: "https://github.com/SiddhantKanawade30/onTrack"
-        }
+        }   
     ]
 
 
