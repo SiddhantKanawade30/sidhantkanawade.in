@@ -78,11 +78,11 @@
     "id": 6,
     "name": "Canvas Board",
     "slug": "canvas-board",
-    "shortDescription": "Real-time collaborative whiteboard for team brainstorming and design with instant sync.",
+    "shortDescription": "Real-time collaborative whiteboarding platform featuring an infinite canvas and WebSocket-based synchronization.",
     "description": [
-      "A real-time collaborative whiteboarding platform that allows multiple users to brainstorm, architect flows, and design wireframes on a shared infinite canvas.",
-      "Built with a Next.js frontend and Node.js backend, utilizing WebSockets to handle instant synchronization of shapes, drawings, and ideas across all connected clients.",
-      "Tech stack features PostgreSQL with Prisma ORM for persistent storage of board states, supporting a suite of tools including freehand pencil drawing and geometric shape primitives, with the entire codebase structured as a turborepo."
+      "A real-time collaborative whiteboarding platform with an infinite canvas, allowing multiple users to sketch and build wireframes together in dedicated rooms.",
+      "Built using Next.js, Node.js, and TypeScript, featuring a decoupled backend architecture separating REST APIs from WebSocket connections for real-time synchronization.",
+      "Tech stack includes PostgreSQL and Prisma ORM for database persistence, Zod for schema validation, and Turborepo for monorepo code management."
     ],
     "image": "canvas.webp",
     "link": null,
