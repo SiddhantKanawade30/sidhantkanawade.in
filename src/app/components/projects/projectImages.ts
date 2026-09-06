@@ -6,6 +6,8 @@ import TestimonialsLo from "@public/testimonialslo.webp"
 import FitKaka from "@public/fitkaka.webp"
 import Syncoo from "@public/syncoo.webp"
 import CanvasBoard from "@public/canvas.webp"
+import Radix from "@public/radix.webp"
+import SuperteamUK from "@public/superteamUK.webp"
 
 export const projectImages: Record<string, StaticImageData> = {
   "testimonialslo.webp": TestimonialsLo,
@@ -15,4 +17,6 @@ export const projectImages: Record<string, StaticImageData> = {
   "fitkaka.webp": FitKaka,
   "syncoo.webp": Syncoo,
   "canvas.webp": CanvasBoard,
+  "radix.webp": Radix,
+  "superteamUK.webp": SuperteamUK,
 }

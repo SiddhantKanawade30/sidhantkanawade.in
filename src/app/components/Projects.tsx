@@ -6,10 +6,10 @@ import { Container } from "./Container"
 import { Badge } from "./ui/Badge"
 import OnTrack from "@public/onTrack.webp"
 import TestimonialsLo from "@public/testimonialslo.webp"
-import SecureVault from "@public/securevault.webp"
 import FitKaka from "@public/fitkaka.webp"
-import Syncoo from "@public/syncoo.webp"
 import CanvasBoard from "@public/canvas.webp"
+import Radix from "@public/radix.webp"
+import SuperteamUK from "@public/superteamUK.webp"
 // import GithubIcon from "@public/github-icon.svg"
 
 
@@ -23,6 +23,22 @@ export const Projects = () => {
             description: "AI nutrition assistant for tracking calories, proteins, and meal insights via WhatsApp by image and text upload.",
             href: "https://fit-kaka.vercel.app",
             github: "https://github.com/SiddhantKanawade30/fit-kaka"
+        },
+        {
+            title: "Radix",
+            slug: "radix",
+            src: Radix,
+            description: "Non-custodial multi-chain HD wallet for generating BIP39 seed phrases and deriving Solana & Ethereum keypairs.",
+            href: "https://radix-vault.vercel.app/",
+            github: "https://github.com/SiddhantKanawade30/radix"
+        },
+        {
+            title: "Superteam Ukraine",
+            slug: "superteam-ukraine",
+            src: SuperteamUK,
+            description: "Landing page design for Superteam Ukraine bounty program featuring English and Ukrainian language.",
+            href: "https://www.figma.com/design/11YsuG2J0saz2RN3yFkXKV/superTeamUk?node-id=0-1&p=f",
+            github: null
         },
         {
             title: "TestimonialsLo",
@@ -47,23 +63,7 @@ export const Projects = () => {
             description: "Real-time collaborative whiteboard for sketching, brainstorming, and shared design sessions.",
             href: null,
             github: "https://github.com/SiddhantKanawade30/canvas-board"
-        },
-        {
-            title: "Syncoo (developing)",
-            slug: "syncoo",
-            src: Syncoo,
-            description: "A modern project management platform for issue tracking, dashboards, and team workflows.",
-            href: "https://syncoo.vercel.app/",
-            github: "https://github.com/SiddhantKanawade30/synco"
-        },
-        {
-            title: "Secure Vault",
-            slug: "secure-vault",
-            src: SecureVault,
-            description: "A secure password manager using cryptography, helping users store and manage their passwords securely.",
-            href: "https://secure-vault-delta.vercel.app/",
-            github: "https://github.com/SiddhantKanawade30/SecureVault"
-        }   
+        }
     ]
 
 

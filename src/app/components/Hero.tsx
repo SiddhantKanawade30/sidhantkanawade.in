@@ -22,9 +22,7 @@ export const Hero = () => {
           Siddhant A Kanawade
         </h1>
         <p className="text-sm text-secondary  md:text-base pt-4 pb-2 leading-relaxed">
-          Full-stack web developer specialized in TypeScript, working with
-          MERN Stack, Tailwind, Prisma ORM and many more. I thrive on solving
-          problems and learning new technologies.
+          Welcome to my space on the internet — a collection of things I’ve built, ideas I’m exploring, and a little bit of everything in between.
         </p>
         <span className="text-sm text-secondary md:text-sm mt-1 bg-neutral-100 py-1 px-2 rounded-lg inline-block">
           <TextLoopCustomVariantsTransition />

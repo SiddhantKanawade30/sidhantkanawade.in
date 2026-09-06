@@ -16,6 +16,36 @@
   },
   {
     "id": 2,
+    "name": "Radix",
+    "slug": "radix",
+    "shortDescription": "Non-custodial multi-chain HD wallet for generating BIP39 seed phrases and deriving Solana & Ethereum keypairs.",
+    "description": [
+      "Radix (referring to 'root' in Latin) is a secure, non-custodial Hierarchical Deterministic (HD) cryptocurrency wallet application. It enables users to generate new 12-word recovery phrases or import existing ones to derive production-ready Solana and Ethereum wallet keys directly in browser memory.",
+      "Implements BIP39 seed phrase generation and validation, Solana key derivation (Ed25519 curve via tweetnacl & @solana/web3.js), and Ethereum key derivation (secp256k1 curve via ethers.js HDNodeWallet). Features chain-isolated generation, a secure one-time recovery phrase modal, multi-account derivation, togglable private key visibility, and 1-click clipboard copying with Sonner toast feedback.",
+      "All cryptographic operations occur entirely client-side inside browser memory, ensuring seed phrases and secret keys are never transmitted to external servers or backend APIs."
+    ],
+    "image": "radix.webp",
+    "link": "https://radix-vault.vercel.app/",
+    "github": "https://github.com/SiddhantKanawade30/radix",
+    "layout": "image-right"
+  },
+  {
+    "id": 3,
+    "name": "Superteam Ukraine",
+    "slug": "superteam-ukraine",
+    "shortDescription": "Landing page design for Superteam Ukraine bounty program. ",
+    "description": [
+      "Designed a clean landing page for Superteam Ukraine using Figma, exploring UI/UX design from a developer background.",
+      "Created both English and Ukrainian typography variations tailored for mobile and desktop screens.",
+      "Focused on clean visual hierarchy, modern layout principles, and brand requirements."
+    ],
+    "image": "superteamUK.webp",
+    "link": "https://www.figma.com/design/11YsuG2J0saz2RN3yFkXKV/superTeamUk?node-id=0-1&p=f",
+    "github": null,
+    "layout": "image-left"
+  },
+  {
+    "id": 4,
     "name": "TestimonialsLo",
     "slug": "testimonialslo",
     "shortDescription": "Customer testimonial manager with video uploads, payment flows, and secure storage.",
@@ -30,7 +60,7 @@
     "layout": "image-right"
   },
   {
-    "id": 3,
+    "id": 5,
     "name": "OnTrack",
     "slug": "ontrack",
     "shortDescription": "A lightweight, open-source browser extension designed to strip away YouTube's most addictive features.",
@@ -42,36 +72,6 @@
     "image": "onTrack.webp",
     "link": "https://ontrack-v1.vercel.app/",
     "github": "https://github.com/SiddhantKanawade30/onTrack",
-    "layout": "image-right"
-  },
-  {
-    "id": 4,
-    "name": "Syncoo",
-    "slug": "syncoo",
-    "shortDescription": "Team management platform to streamline team tasks and issues tracking",
-    "description": [
-      "A modern project management and issue-tracking platform designed to streamline task organization and real-time status monitoring.",
-      "Developed with Next.js 16 and TypeScript, featuring a responsive dashboard built with Shadcn/ui and TanStack Table for efficient data handling.",
-      "Tech stack integrates Grok AI for intelligent issue analysis, Tailwind CSS for the interface, and automated Email Notifications to keep teams updated on project milestones."
-    ],
-    "image": "syncoo.webp",
-    "link": "https://syncoo.vercel.app/",
-    "github": "https://github.com/SiddhantKanawade30/synco",
-    "layout": "image-right"
-  },
-  {
-    "id": 5,
-    "name": "Secure Vault",
-    "slug": "secure-vault",
-    "shortDescription": "Encrypted password manager built with MERN stack for secure credential storage.",
-    "description": [
-      "A secure password manager using cryptography, helping users store and manage their passwords securely.",
-      "Built using Mern stack, for encryption of passwords, secure vault uses cryptojs library.",
-      "This is my first MERN stack project, got indepth of how does encryption works."
-    ],
-    "image": "securevault.webp",
-    "link": "https://secure-vault-delta.vercel.app/",
-    "github": "https://github.com/SiddhantKanawade30/SecureVault",
     "layout": "image-left"
   },
   {
@@ -87,7 +87,7 @@
     "image": "canvas.webp",
     "link": null,
     "github": "https://github.com/SiddhantKanawade30/canvas-board",
-    "layout": "image-left"
+    "layout": "image-right"
   },
   {
     "id": 7,
